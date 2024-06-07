@@ -1,0 +1,230 @@
+/* Corpo e cabeçalho */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    padding: 16px 0;
+    background-color: #222;;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header nav li{
+    display: inline;
+    margin-left: 16px;
+    font-size: 18px;
+}
+
+header nav li a:hover{
+    color: #FFA500;
+    border-bottom: 2px solid #ff0000;
+    padding-bottom: 20px;
+}
+
+header nav li a{
+    color: white;
+    text-decoration: none;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*conteudo*/
+
+.container{
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container h2 {
+    color: #FFA500;
+}
+
+header .container,
+section .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#sobre .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    width: 100vh;
+}
+
+#sobre .container p{
+    flex: 1;
+    margin-right: 50px; 
+}
+
+#sobre .container img{
+    max-width: 300px;
+}
+
+#section-itens .container .itens {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centraliza os itens horizontalmente */
+}
+
+#section-itens .container .itens .film_itens {
+    flex: 0 1 230px;
+    margin: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#section-itens .container .itens .film_itens img {
+    max-width: 100%;
+    max-height: 300px; 
+    width: 300px;
+    height: 200px;
+    margin-bottom: 10px; 
+}
+
+#section-itens .container,
+#jogos .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+#section-itens .container p,
+#jogos .container p {
+    flex: 1;
+}
+
+#section-itens .container img,
+#jogos .container img {
+    max-width: 255px;
+}
+
+/* Estilos para os itens */
+
+/* Estilos para os itens de filmes, séries e jogos */
+
+.itens > div {
+    flex: 1;
+    min-width: 200px;
+    margin: 1rem;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.itens {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#filmes-series .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+/* Formulário CSS */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form textarea{
+    resize: none;
+}
+
+label {
+    margin: 0.5rem 0 0.2rem;
+}
+
+input, textarea {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 0.7rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #333;
+    color: white;
+}
+
+#contato .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-methods {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.contact-methods > div {
+    flex: 1;
+    min-width: 200px;
+    margin: 1rem;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-methods h3 {
+    color: #333;
+}
+
+.social-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.social-links li {
+    margin: 0 1rem;
+}
+
+.social-links img {
+    width: 32px;
+    height: 32px;
+}
